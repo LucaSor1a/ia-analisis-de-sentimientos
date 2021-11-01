@@ -33,7 +33,7 @@ headers = {
     "Authorization": f"Bearer {bearer_token}",
     "User-Agent": "v2FullArchiveSearchPython"
 }
-words = '#techtember OR #techtober OR tectober OR tectember'
+words = '(#techtember OR #techtober OR tectober OR tectember)'
 params = {
     'query': f'{words} lang:en -is:retweet',
     'max_results': 100
